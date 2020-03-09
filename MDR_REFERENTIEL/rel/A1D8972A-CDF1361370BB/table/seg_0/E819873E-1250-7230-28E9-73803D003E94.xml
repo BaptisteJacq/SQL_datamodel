@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E819873E-1250-7230-28E9-73803D003E94" name="TA_POINT_VIGILANCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 15:26:40 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_40</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="EE515CED-11E1-5E32-6F70-9C6D653BC32E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 15:28:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_de_creation" id="50DAFB5E-E010-32A9-56E0-D91D6E644084">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 16:48:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création du point de vigilance]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_de_modification" id="F986C5E9-8B2F-71CD-345A-AF631F9F7B6A">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 16:48:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de modification / mise à jour du point de vigilance]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auteur_point_de_vigilance" id="A812142B-E3E6-8FD2-5B35-EB923CA320A5">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 16:48:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Créateur du point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modificateur_point_de_vigilance" id="9BA03F19-0327-DDFB-EEA0-98FB0379DF12">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 16:48:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Modificateur du statut du point de vigilance]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Niveau de priorite" id="0CF7472C-4222-812E-21DB-A69251D840C0">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 16:48:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant la priorisation de traitement des points de vigilance :
+0 = non-prioritaire ;
+1 = prioritaire ;]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_lib_etat" id="65EE49CB-9CFE-FBE8-4FB8-56707AA938BE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 16:48:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table ta_libelle  indiquant le statut de la fiche qui peut être soit commencé soit vérifié.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="816FC278-F0C8-75A8-502F-0A1625AE7C9F" name="TA_POINT_VIGILANCE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-09 15:28:38 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE515CED-11E1-5E32-6F70-9C6D653BC32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
