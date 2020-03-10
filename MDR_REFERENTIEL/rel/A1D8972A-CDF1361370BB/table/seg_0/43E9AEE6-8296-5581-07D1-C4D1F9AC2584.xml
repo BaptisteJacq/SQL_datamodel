@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43E9AEE6-8296-5581-07D1-C4D1F9AC2584" name="TA_TYPE_DE_SIGNALEMENT">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-10 09:58:28 UTC</createdTime>
+<comment><![CDATA[Table regroupant tous les signalements justifiant la création d'un point de vigilance.
+Exemple : création, modification, problème, vérification]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_41</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="745F578A-DFC6-F9B9-9776-A47144251514">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-10 10:11:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="signalement" id="5DF6BB39-7591-A18F-B71C-71E6E593F352">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-10 10:11:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de signalement.
+Exemple : "création", "modification", "problème", "vérification"]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B8252A5-2322-6F73-EE0B-BE86D3ED0430" name="TA_TYPE_POINT_DE_VIGILANCE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-10 10:11:35 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="745F578A-DFC6-F9B9-9776-A47144251514"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

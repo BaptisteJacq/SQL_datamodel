@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3EED3AFD-DC25-28C0-F2DB-67D1EE6DA0C6" containerWithKeyObject="E819873E-1250-7230-28E9-73803D003E94" localFKIndex="EF41CDE0-FFA8-99C5-F235-731719BC3801" name="TA_TYPE_DE_SIGNALEMENT_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-03-10 10:27:27 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_TYPE_DE_SIGNALEMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>43E9AEE6-8296-5581-07D1-C4D1F9AC2584</referredTableID>
+<keyObject>0B8252A5-2322-6F73-EE0B-BE86D3ED0430</keyObject>
+<referredKeyID>0B8252A5-2322-6F73-EE0B-BE86D3ED0430</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
