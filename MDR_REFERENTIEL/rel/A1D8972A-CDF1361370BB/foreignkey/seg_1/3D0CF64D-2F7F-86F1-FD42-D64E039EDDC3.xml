@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="3D0CF64D-2F7F-86F1-FD42-D64E039EDDC3" containerWithKeyObject="AC202796-CF06-B1CD-0B7B-8D4D2686B1AA" localFKIndex="AF5FAB01-F4FD-3439-354A-4DBE6C710F10" name="TA_PERMIS_CONSTRUIRE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:11:16 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_PERMIS_CONSTRUIRE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9A49A5CB-2DAC-88EE-006B-11F0B90C8615</referredTableID>
+<keyObject>F8E4F2DE-7416-5C25-7CAA-73D2EC733C71</keyObject>
+<referredKeyID>F8E4F2DE-7416-5C25-7CAA-73D2EC733C71</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
