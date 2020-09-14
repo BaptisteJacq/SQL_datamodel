@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F68143DB-6581-AF1E-E556-885612754F33" name="TA_GG_POINT_VIGILANCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:36:03 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_44</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="44D0DED4-936E-D225-C6F5-1D4EE83823EE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:37:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_lib_categorie" id="8B3DAB20-5688-B45C-7162-240E1356586F">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:37:50 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C59EA0E1-CA53-E87E-1A8C-984F0F56E4F3" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_type_signalement" id="2A4075CD-BC7C-D49F-1F66-DEC46A012515">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:44:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK de ta_libelle - Type de signalement justifiant la création du point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C049276-3D1E-FB85-E067-8F30F551A025" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_etat_chantier" id="CCE900ED-26A2-CFA7-FE66-73807440520E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:44:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK de ta_libelle - champ permettant de connaître l'état d'avancement du chantier ayant nécessité la création du point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA62AA7E-E3C6-329D-D1EF-E2BA598E69DB" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_lib_statut" id="F22F285C-0320-0C89-CC08-8A007CBBF292">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:44:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK de ta_libelle - Statut du point de vigilance. Il ne peut y avoir que deux valeurs : 'traité' ; 'non-traité']]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDCE1D09-4982-C05E-4F24-70AD9501ED9C" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="1C14C57C-BFBF-BC21-211B-236825448681">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:44:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK de ta_libelle - Champ permettant de connaître le type d'objet sur lequel porte le point de vigilance]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7849A8B-487B-91F8-130F-5B42C9056757" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="commentaire" id="05ADBA43-614C-1D30-3D73-189B7858599E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:37:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ dans lequel l'auteur/modificateur du point de vigilance peut inscrire l'interrogation qu'il avait lors de la création/modification du point ou écrire une question à destination de l'UF TOPO.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="425AB15A-9959-6922-6037-32892D41189C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:37:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type ponctuel du point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66E46F91-B729-9BF9-22AE-81C541B57282" name="TA_GG_POINT_VIGILANCE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:37:46 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44D0DED4-936E-D225-C6F5-1D4EE83823EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35C61F59-7807-4461-BB54-6D9FE8265887" name="TA_LIBELLE_CATEGORIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:37:50 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B3DAB20-5688-B45C-7162-240E1356586F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="642C86DA-E7B8-DA7C-3117-F36E66FBA429" name="TA_LIBELLE_SIGNALEMENT_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:44:15 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A4075CD-BC7C-D49F-1F66-DEC46A012515"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAD6EDFD-72E1-8D17-9BE5-B80934021467" name="TA_LIBELLE_ETAT_CHANTIER_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:45:11 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCE900ED-26A2-CFA7-FE66-73807440520E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85C10DD5-52F1-386B-B052-76C62C252164" name="TA_LIBELLE_STATUT_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 07:45:48 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F22F285C-0320-0C89-CC08-8A007CBBF292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35922ED4-E964-65A1-8DB6-350E36DA095F" name="TA_LIBELLE_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:01:59 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C14C57C-BFBF-BC21-211B-236825448681"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
