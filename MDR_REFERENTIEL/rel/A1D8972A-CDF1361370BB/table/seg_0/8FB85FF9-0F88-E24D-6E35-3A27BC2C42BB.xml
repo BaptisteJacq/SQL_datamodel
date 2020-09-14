@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FB85FF9-0F88-E24D-6E35-3A27BC2C42BB" name="TA_ACTIONS_PNOMS">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:12:28 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_46</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="D0BDADF8-0709-0310-35E3-EC150CCB5933">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnom" id="33B68C89-AAC4-8A44-C959-C4B59B215F7B">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de chaque personne effectuant une action sur les points de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_point_vigilance" id="3B2E0021-B951-ADD0-9C8D-A1CE23A0C6AA">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers l'identifiant du point de vigilance sur lequel porte l'action.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57447993-1676-680E-5E34-8DB8C91D18EC" referredColumn="44D0DED4-936E-D225-C6F5-1D4EE83823EE"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="D653C7E5-D4B8-A87B-3964-675522280B9C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE indiquant le type d'action effectuée par le pnom sur un objet.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE42DF65-E4D8-5836-FD70-753F2A5D4CCC" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="date_action" id="2275C747-CA29-DFD3-184C-064900276853">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de l'action du pnom sur un objet de la table TA_GG_POINT_VIGILANCE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FEA7945-7544-33BB-A1E9-EFA34228D13C" name="TA_ACTIONS_PNOMS_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:01 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0BDADF8-0709-0310-35E3-EC150CCB5933"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EA0740A-C4CA-86D7-E703-2C72BF65D8DB" name="TA_GG_POINT_VIGILANCE_FKv2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:35 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B2E0021-B951-ADD0-9C8D-A1CE23A0C6AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E12C5E87-6625-2553-EE2F-A6A7B18B0210" name="TA_LIBELLE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:20:11 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D653C7E5-D4B8-A87B-3964-675522280B9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
