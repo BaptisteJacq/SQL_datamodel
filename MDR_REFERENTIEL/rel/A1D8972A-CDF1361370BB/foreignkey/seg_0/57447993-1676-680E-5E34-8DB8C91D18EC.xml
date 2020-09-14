@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57447993-1676-680E-5E34-8DB8C91D18EC" containerWithKeyObject="8FB85FF9-0F88-E24D-6E35-3A27BC2C42BB" localFKIndex="4EA0740A-C4CA-86D7-E703-2C72BF65D8DB" name="TA_GG_POINT_VIGILANCE_FKv2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:19:35 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_GG_POINT_VIGILANCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F68143DB-6581-AF1E-E556-885612754F33</referredTableID>
+<keyObject>66E46F91-B729-9BF9-22AE-81C541B57282</keyObject>
+<referredKeyID>66E46F91-B729-9BF9-22AE-81C541B57282</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
