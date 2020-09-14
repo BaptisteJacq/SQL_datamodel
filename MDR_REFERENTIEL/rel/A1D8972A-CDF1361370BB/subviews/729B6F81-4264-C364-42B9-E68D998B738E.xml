@@ -16,7 +16,7 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="0B628A79-A4C2-6888-5BD3-92709871CFE3" otype="Note" vid="5FFA2E52-43CD-3136-7090-158FE3C21516">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="313" y="654" width="236" height="40"/>
+<bounds x="355" y="658" width="236" height="40"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -32,13 +32,12 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="24CD2673-C407-0926-9212-8231C9D8B0E6" otype="Note" vid="CF28D68B-8CC8-93D6-1E58-24427FC6763A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="935" y="574" width="217" height="80"/>
+<bounds x="9" y="587" width="281" height="41"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table regroupant toutes les vérifications effectuées sur les points de vigilance.
-Exemple : chantier potentiel, chantier en cours, chantier terminé, permis de construire</comment>
+<comment>Table d&apos;audit permettant de connaître les actions de pnoms sur les points de vigilance.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -47,13 +46,9 @@ Exemple : chantier potentiel, chantier en cours, chantier terminé, permis de co
 </FontObject>
 </fonts>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="43E9AEE6-8296-5581-07D1-C4D1F9AC2584" otype="Table" vid="A327F9A3-819C-9109-781C-136AD9530454">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="679" y="444" width="259" height="88"/>
-</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="2353A093-A1A1-E9E4-E880-7A1FB1546009">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="391" y="271" width="210" height="77"/>
+<bounds x="392" y="240" width="210" height="77"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="6D3EB033-11BD-1F9A-056F-1AC5FCF5A9A2" otype="Note" vid="91604B8A-4257-02F1-87FD-F827361A6177">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -73,13 +68,12 @@ Exemple : chantier potentiel, chantier en cours, chantier terminé, permis de co
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="87BA56B7-AABD-85BF-39C5-EE4B575ED4F3" otype="Note" vid="629867A6-2321-41B1-A6FA-1DDD513156F5">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="946" y="443" width="168" height="85"/>
+<bounds x="759" y="747" width="271" height="72"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table regroupant tous les signalements justifiant la création d&apos;un point de vigilance.
-Exemple : création, modification, problème, vérification</comment>
+<comment>Table regroupant les numéros, les dates de début et de fin des permis de construire relevés durant une visite de terrain, lors de la gestion/vérification des points de vigilance.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -92,13 +86,41 @@ Exemple : création, modification, problème, vérification</comment>
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="401" y="45" width="213" height="132"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8FB85FF9-0F88-E24D-6E35-3A27BC2C42BB" otype="Table" vid="8046DF47-1C2F-BA36-A8CC-E9A99381700D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="7" y="425" width="290" height="155"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="935D4887-F8AC-DC3A-51D7-2156536DDEB8" otype="Note" vid="0B44F020-2B9C-B64A-C53C-685D9992D93A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="741" y="452" width="309" height="44"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer un point de vigilance à son permis de construire.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9A49A5CB-2DAC-88EE-006B-11F0B90C8615" otype="Table" vid="437BFC4D-1808-3B8C-8914-A6B06A27ADC2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="761" y="642" width="259" height="100"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" otype="Table" vid="2BCB4FF5-A1F2-2838-22A8-3BEC85CC2F38">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="87" y="52" width="208" height="86"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AC202796-CF06-B1CD-0B7B-8D4D2686B1AA" otype="Table" vid="89E135C4-013A-8A11-17CD-1704B7D9A822">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="751" y="503" width="289" height="101"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="CB64C10B-B955-8ED2-6CEE-D2C5BA1E9C08" otype="Note" vid="9A04F5E5-2B91-8BCD-84AC-498C355E75B5">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="610" y="271" width="274" height="80"/>
+<bounds x="614" y="238" width="274" height="80"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -117,13 +139,9 @@ Exemple :
 </FontObject>
 </fonts>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E819873E-1250-7230-28E9-73803D003E94" otype="Table" vid="9538B84F-162C-5FBC-C985-FDB281D65FDE">
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F68143DB-6581-AF1E-E556-885612754F33" otype="Table" vid="1D51E19C-9E27-7E54-EA49-CC60E51B478A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="311" y="413" width="302" height="237"/>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="EEADBCA1-0838-9651-64D1-168D435CF443" otype="Table" vid="A3A5417A-828C-D10E-B5DA-D8A61CCE9227">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="682" y="574" width="249" height="81"/>
+<bounds x="352" y="403" width="330" height="246"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="FD6EB7F4-C9B2-A6D5-FBA2-4F05D1ECA872" otype="Note" vid="2CAEAFD0-FC26-FB2E-FBA4-3617111D8AA1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -145,31 +163,49 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 </OView>
 </objectViews>
 <connectors>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3EED3AFD-DC25-28C0-F2DB-67D1EE6DA0C6" otype="FKIndexAssociation" vid_source="A327F9A3-819C-9109-781C-136AD9530454" vid_target="9538B84F-162C-5FBC-C985-FDB281D65FDE">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3D0CF64D-2F7F-86F1-FD42-D64E039EDDC3" otype="FKIndexAssociation" vid_source="437BFC4D-1808-3B8C-8914-A6B06A27ADC2" vid_target="89E135C4-013A-8A11-17CD-1704B7D9A822">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="679" y="488"/>
-<point x="613" y="488"/>
+<point x="890" y="642"/>
+<point x="890" y="604"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7BC8E7C1-4532-B00D-2EF8-DE0A6C90325A" otype="FKIndexAssociation" vid_source="A3A5417A-828C-D10E-B5DA-D8A61CCE9227" vid_target="9538B84F-162C-5FBC-C985-FDB281D65FDE">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="57447993-1676-680E-5E34-8DB8C91D18EC" otype="FKIndexAssociation" vid_source="1D51E19C-9E27-7E54-EA49-CC60E51B478A" vid_target="8046DF47-1C2F-BA36-A8CC-E9A99381700D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="682" y="612"/>
-<point x="613" y="612"/>
+<point x="352" y="502"/>
+<point x="297" y="502"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="AA38B1AB-A408-22D7-8767-1E155B0EE255" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="9538B84F-162C-5FBC-C985-FDB281D65FDE">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6116B186-BA69-A19D-F74E-E62A3E6C26F1" otype="FKIndexAssociation" vid_source="1D51E19C-9E27-7E54-EA49-CC60E51B478A" vid_target="89E135C4-013A-8A11-17CD-1704B7D9A822">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="496" y="348"/>
-<point x="496" y="413"/>
+<point x="682" y="553"/>
+<point x="751" y="553"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7C049276-3D1E-FB85-E067-8F30F551A025" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="1D51E19C-9E27-7E54-EA49-CC60E51B478A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="542" y="317"/>
+<point x="542" y="403"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A7849A8B-487B-91F8-130F-5B42C9056757" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="1D51E19C-9E27-7E54-EA49-CC60E51B478A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="527" y="317"/>
+<point x="527" y="403"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C11B4220-C1A4-F577-F05B-4A3932806C5E" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="98A3AACF-E88A-137D-02CA-958943FFCA7B">
@@ -177,8 +213,44 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="501" y="271"/>
+<point x="501" y="240"/>
 <point x="501" y="177"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C59EA0E1-CA53-E87E-1A8C-984F0F56E4F3" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="1D51E19C-9E27-7E54-EA49-CC60E51B478A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="467" y="317"/>
+<point x="467" y="403"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CA62AA7E-E3C6-329D-D1EF-E2BA598E69DB" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="1D51E19C-9E27-7E54-EA49-CC60E51B478A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="452" y="317"/>
+<point x="452" y="403"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CE42DF65-E4D8-5836-FD70-753F2A5D4CCC" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="8046DF47-1C2F-BA36-A8CC-E9A99381700D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="437" y="317"/>
+<point x="271" y="425"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DDCE1D09-4982-C05E-4F24-70AD9501ED9C" otype="FKIndexAssociation" vid_source="2353A093-A1A1-E9E4-E880-7A1FB1546009" vid_target="1D51E19C-9E27-7E54-EA49-CC60E51B478A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="557" y="317"/>
+<point x="557" y="403"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" otype="FKIndexAssociation" vid_source="2BCB4FF5-A1F2-2838-22A8-3BEC85CC2F38" vid_target="98A3AACF-E88A-137D-02CA-958943FFCA7B">
