@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC202796-CF06-B1CD-0B7B-8D4D2686B1AA" name="TA_RELATION_PERMIS_CONSTRUIRE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:06:21 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d'associer les points de vigilance à leur permis de construire.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_45</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="4241D9A1-34F7-9A7B-C5A0-AE9AC65F1B16">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:10:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_point_vigilance" id="6DB7F846-7CEC-7E0C-3E23-2125FE975882">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:10:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK de ta_gg_point_vigilance permettant de lier les points de vigilance à leur permis de construire.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6116B186-BA69-A19D-F74E-E62A3E6C26F1" referredColumn="44D0DED4-936E-D225-C6F5-1D4EE83823EE"/>
+</associations>
+</Column>
+<Column name="fid_permis_construire" id="5FCD2797-99A2-7106-0A89-D088EF070934">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:10:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK de ta_permis_de_construire permettant de lier les permis de construire à leur point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D0CF64D-2F7F-86F1-FD42-D64E039EDDC3" referredColumn="9C80E3A0-08D4-42EA-D996-8480921BC240"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8443BB98-4D48-F81D-8E47-C731A6D0EBC3" name="TA_GG_POINT_VIGILANCE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:10:56 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DB7F846-7CEC-7E0C-3E23-2125FE975882"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF5FAB01-F4FD-3439-354A-4DBE6C710F10" name="TA_PERMIS_CONSTRUIRE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-09-14 08:11:16 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FCD2797-99A2-7106-0A89-D088EF070934"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
