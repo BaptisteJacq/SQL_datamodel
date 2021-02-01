@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE45E1D0-7C5C-F890-F56A-0348A0F2273F" name="TA_GG_POINT_VIGILANCE_AUDIT">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:21:47 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_57</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="541464E9-53FD-9398-5955-61C1F9AF2A59">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:12 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_point_vigilance" id="1C267EFF-9532-E7A9-8558-1F292AE226B4">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étangère de la table ta_gg_point_vigilance servant à associer les actions des pnoms aux objets concernés par ces actions (insertion + édition. La suppression étant impossible).]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A458D54-E55A-0CEC-B0D1-2D7536D7EB8A" referredColumn="33AE36C1-AF28-76EB-D9B5-41715B44B5BA"/>
+</associations>
+</Column>
+<Column name="fid_pnom_creation" id="6B8D7226-9E25-9247-964C-45D7E8E3A432">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers TA_GG_SOURCE permettant de récupérer le pnom de l'utilisateur ayant créé le point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D34BAB6-049A-361C-8FBE-C84CC8A9D60C" referredColumn="7E919454-51E6-DF32-86C1-14716C8B27AA"/>
+</associations>
+</Column>
+<Column name="date_creation" id="BFF9007B-01D4-16E1-C73C-7717717A6A4C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création du point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_modification" id="C305D18C-19C4-21BF-F07E-9658806B0FB1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers TA_GG_SOURCE permettant de récupérer le pnom de l'utilisateur ayant modifié le point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54BA1BB9-4929-D0C1-9EC1-4465B2DB4AC1" referredColumn="7E919454-51E6-DF32-86C1-14716C8B27AA"/>
+</associations>
+</Column>
+<Column name="date_modification" id="36CCCA76-8A6A-4585-0F72-36C6B0554BFA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:01:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de la dernière modification du point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A49D699A-62E3-79D9-6ED4-E0B67F409C80" name="TA_GG_POINT_VIGILANCE_AUDIT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:12 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="541464E9-53FD-9398-5955-61C1F9AF2A59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="060D2737-DEFA-3240-0A19-FF4B7A35F760" name="TA_GG_POINT_VIGILANCE_AUDIT_FID_POINT_VIGILANCE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-12 07:25:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C267EFF-9532-E7A9-8558-1F292AE226B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D67BE473-175D-8E47-6149-E42E8AE5AD8D" name="TA_GG_POINT_VIGILANCE_AUDIT_FID_PNOM_CREATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:12:15 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B8D7226-9E25-9247-964C-45D7E8E3A432"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12263089-431D-F193-3FD8-0E565A72F7A0" name="TA_GG_POINT_VIGILANCE_AUDIT_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:13:16 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C305D18C-19C4-21BF-F07E-9658806B0FB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

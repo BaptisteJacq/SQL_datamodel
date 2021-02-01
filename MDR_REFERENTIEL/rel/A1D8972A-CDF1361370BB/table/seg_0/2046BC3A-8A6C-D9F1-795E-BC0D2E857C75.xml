@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2046BC3A-8A6C-D9F1-795E-BC0D2E857C75" name="TA_GG_SOURCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:06:11 UTC</createdTime>
+<comment><![CDATA[Table recensant tous les agents participant à la création, l'édition et la suppression des dossiers dans G_GESTIONGEO.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_59</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SRC_ID" id="7E919454-51E6-DF32-86C1-14716C8B27AA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:10:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table : numéro agent sur 4 chiffres.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SRC_LIBEL" id="1C953FFF-7EBD-BEF4-A0F4-9D9B86CBC41F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:10:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de chaque agent participant à la vie des données via GestionGeo.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SRC_VAL" id="3111DD2A-F467-9EA8-8C10-A09BC212BB1E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:10:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Validité du pnom (permet de savoir si l'agent participe encore à la vie de donnée ou non - 1 = valide ; 0 = non-valide).]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B75B1178-8D3D-7F31-58BD-B04962DA3693" name="TA_GG_SOURCE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-01 08:10:23 UTC</createdTime>
+<comment><![CDATA[Cette PK est faite sur le numéro agent sur 4 chiffres.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E919454-51E6-DF32-86C1-14716C8B27AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
