@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA252777-9A74-C66E-5404-B3DAF88C4C40" name="TA_RELATION_DOSSIER_ACTEUR_3D">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA252777-9A74-C66E-5404-B3DAF88C4C40" name="TA_RELATION_DOSSIER_ACTEUR_CELLULE_3D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:13:54 UTC</createdTime>
 <comment><![CDATA[Table pivot permettant d'associer un dossier à un ou plusieurs prestataires et demandeurs.]]></comment>
@@ -53,7 +53,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="22FE9D9D-3C3E-EB43-87A2-924CE6AB6A85" name="TA_RELATION_DOSSIER_ACTEUR_3D_PK">
+<ind_PK_UK id="22FE9D9D-3C3E-EB43-87A2-924CE6AB6A85" name="TA_RELATION_DOSSIER_ACTEUR_CELLULE_3D_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:17:27 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" name="TA_RELATION_DOSSIER_3D_PRODUCTION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" name="TA_RELATION_DOSSIER_PRODUCTION_CELLULE_3D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 07:57:27 UTC</createdTime>
-<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs dossiers 3D de la table TA_DOSSIER_3D à une ou plusieurs productions de la table TA_DOSSIER_3D_PRODUCTION dans lesquelles les premiers sont utilisés.]]></comment>
+<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs dossiers de la table TA_DOSSIER_CELLULE_3D à une ou plusieurs productions de la table TA_DOSSIER_PRODUCTION_CELLULE_3D dans lesquelles les premiers sont utilisés.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_19</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -53,7 +53,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0F5E2188-E7F8-5A5E-7EC8-1BE233086F06" name="TA_RELATION_DOSSIER_3D_PRODUCTION_PK">
+<ind_PK_UK id="0F5E2188-E7F8-5A5E-7EC8-1BE233086F06" name="TA_RELATION_DOSSIER_PRODUCTION_CELLULE_3D_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 08:03:24 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>

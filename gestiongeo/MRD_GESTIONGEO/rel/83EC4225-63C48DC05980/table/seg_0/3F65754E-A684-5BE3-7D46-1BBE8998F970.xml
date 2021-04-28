@@ -1,15 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F65754E-A684-5BE3-7D46-1BBE8998F970" name="TA_DOSSIER_3D_PRODUCTION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F65754E-A684-5BE3-7D46-1BBE8998F970" name="TA_PRODUCTION_CELLULE_3D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 07:52:33 UTC</createdTime>
-<comment><![CDATA[Table regroupant tous les produits 3D faits à partir des dossiers 3D recensés dans la table TA_DOSSIER_3D.
+<comment><![CDATA[Table regroupant toutes les productions faites à partir des dossiers recensés dans la table TA_DOSSIER_CELLULE_3D.
 Ces produits sont regroupés dans les catégories suivantes :
 - photo ;
 - vidéo ;
 - orthophoto ;
 - modèle numérique ;
 - maillage ;
-- nuage ;]]></comment>
+- nuage de points ;]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_18</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -33,7 +33,6 @@ Ces produits sont regroupés dans les catégories suivantes :
 <createdTime>2021-04-23 07:56:48 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nom du produit/fichier]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -72,7 +71,7 @@ Exemple : photo, vidéo, nuage de points, etc.]]></commentInRDBMS>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="AE89F650-1F4C-4BC1-93D6-9E3D7FD4F004" name="TA_DOSSIER_3D_PRODUCTION_PK">
+<ind_PK_UK id="AE89F650-1F4C-4BC1-93D6-9E3D7FD4F004" name="TA_PRODUCTION_CELLULE_3D_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 07:56:48 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>

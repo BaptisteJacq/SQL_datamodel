@@ -2,8 +2,8 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3226AAB-4F83-CF0F-6556-12BFF7CDDF18" name="TA_RELATION_LIBELLE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:28:42 UTC</createdTime>
-<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs libellés à un ou plusieurs dossiers 3D.
-Dans le cas présent elle permet d'associer les états d'avancement et les types de données à chaque dossier 3D.]]></comment>
+<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs libellés du schéma G_GEO à un ou plusieurs objets du schéma G_GESTIONGEO.
+Dans le cas présent elle permet d'associer les états d'avancement et les types de données à chaque dossier de la cellule 3D.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_17</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -31,7 +31,7 @@ Dans le cas présent elle permet d'associer les états d'avancement et les types
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="382FEFD8-7D2C-3561-CF18-9CE369F6815D" referredColumn="E81F25D7-7E97-73C7-0B60-A70969091B6E"/>

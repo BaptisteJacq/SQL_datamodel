@@ -1,8 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A65AB69-B277-89C2-955D-C0563D2B4DFB" name="TA_ACTEURS_3D">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A65AB69-B277-89C2-955D-C0563D2B4DFB" name="TA_ACTEURS_CELLULE_3D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:10:09 UTC</createdTime>
-<comment><![CDATA[Table regroupant tous les acteurs en lien avec l'équipe 3D de l'UF Acquisition de données.]]></comment>
+<comment><![CDATA[Table regroupant tous les acteurs en lien avec la cellule 3D de l'UF Acquisition de données.
+Il peuvent être de deux types :
+- prestataire ;
+- demandeur ;]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_15</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -26,7 +29,6 @@
 <createdTime>2021-04-22 15:13:34 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nom de l''acteur]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -39,7 +41,6 @@
 <createdTime>2021-04-22 15:13:34 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère ves la table TA_LIBELLE permettant de distinguer les prestataires des demandeurs parmi les acteurs 3D.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -49,7 +50,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="80136172-3BD7-71AB-606F-386DDCE142A5" name="TA_ACTEURS_3D_PK">
+<ind_PK_UK id="80136172-3BD7-71AB-606F-386DDCE142A5" name="TA_ACTEURS_CELLULE_3D_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:13:34 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>

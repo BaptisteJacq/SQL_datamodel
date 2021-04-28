@@ -26,7 +26,6 @@
 <createdTime>2020-12-10 10:58:33 UTC</createdTime>
 <commentInRDBMS><![CDATA[Pnom de chaque agent.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -40,7 +39,6 @@
 <commentInRDBMS><![CDATA[Champ booléen permettant de savoir si l'agent participe encore à la gestion des dossiers ou non.
 0 = non ; 1 = oui.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
